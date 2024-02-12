@@ -17,6 +17,7 @@ function App() {
       setErrorMessage('User is not logged in');
       return;
     }
+
     setErrorMessage(undefined);
     const ethersSigner = new CapsuleEthersSigner(capsule);
     setMessageSignature(await ethersSigner.signMessage(MESSAGE_TO_SIGN));
@@ -44,13 +45,11 @@ function App() {
           Check if logged in
         </button>
         {walletAddress ? <h2>User is logged in!</h2> : <h2>User is not logged in.</h2> }
-        <br />
         {walletAddress &&
           <button
             onClick={signMessage}
           >Sign Message</button>
         }
-        <br />
         <br />
         {walletAddress && <h3>Wallet Address: {walletAddress}</h3>}
         <br />
