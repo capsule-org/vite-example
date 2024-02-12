@@ -1,0 +1,41 @@
+.body button {
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #000000;
+  color: #ffffff;
+  margin: 1em;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  background-color: #6f6f6f;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.capsule-button {
+  width: 280px;
+  margin: 0 auto;
+}
+
+#root {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  align-items: center;
+}
+
+.body h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.body h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
