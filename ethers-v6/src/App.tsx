@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import Capsule, { Button, Environment, OAuthMethod, CapsuleEthersSigner } from '@usecapsule/web-sdk';
+import Capsule, { CapsuleButton, Environment, OAuthMethod } from '@usecapsule/react-sdk';
+import { CapsuleEthersSigner } from '@usecapsule/ethers-v6-integration';
 import './App.css';
 
 // not sensitive
@@ -35,7 +36,7 @@ function App() {
   return (
     <>
       <div className="capsule-button">
-        <Button capsule={capsule} appName="Vite Example" oAuthMethods={[OAuthMethod.GOOGLE]} />
+        <CapsuleButton capsule={capsule} appName="Vite Example" oAuthMethods={[OAuthMethod.GOOGLE]} />
       </div>
       <div className="body">
         <br />
